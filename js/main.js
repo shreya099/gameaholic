@@ -128,7 +128,7 @@ $("#myinput").keyup(function() {
 if (annyang) {
   // Let's define a command.
   const commands = {
-    'play':  function(){
+    'play song':  function(){
 
 document.getElementById('vid').play();
    document.getElementById('vid').muted = false;
