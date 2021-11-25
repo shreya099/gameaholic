@@ -97,8 +97,33 @@
         $("html, body").animate({ scrollTop: 0 }, "slow");
         return false;
      });
-
 })(jQuery);
+// JavaScript code
+$("#myinput").keyup(function() {
+ 
+    var val = $.trim(this.value);
+    if (val === "")
+        $('img').show();
+    else {
+          $('html, body').animate({
+        scrollTop: $("#g").offset().top
+    }, 2000);
+        $('img').hide();
+       
+        $("img[alt*=" + val + "]").show();
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
 
 if (annyang) {
   // Let's define a command.
