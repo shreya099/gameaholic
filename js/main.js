@@ -103,14 +103,15 @@ $("#myinput").keyup(function() {
  
     var val = $.trim(this.value);
     if (val === "")
-        $('img').show();
+        $('.set-bg').show();
     else {
-          $('html, body').animate({
-        scrollTop: $("#g").offset().top
-    }, 2000);
-        $('img').hide();
+   
+         $('#hero').hide();
        
-        $("img[alt*=" + val + "]").show();
+        $('.set-bg').hide();
+       var x=$(".set-bg[alt*=" + val + "]");
+       console.log(x);
+        x.show();
     }
 });
 
