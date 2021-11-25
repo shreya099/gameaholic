@@ -165,12 +165,28 @@ phone.value =variable;
      'write email *tag':  function(variable){
 var email=document.getElementById('e');
 email.value =variable.split(" ").join("");
+    },
+    'play tic *tag':  function(variable){
+        var att=document.getElementById('att');
+ location.replace(att);
+    },
+     'play join *tag':  function(variable){
+        var att=document.getElementById('att1');
+ location.replace(att1);
+    },
+     'play bird *tag':  function(variable){
+        var att=document.getElementById('att2');
+ location.replace(att2);
     }
 
 
 
 
   };
+  var showFlickr = function(tag) {
+ 
+}
+
 
   // Add our commands to annyang
   annyang.addCommands(commands);
